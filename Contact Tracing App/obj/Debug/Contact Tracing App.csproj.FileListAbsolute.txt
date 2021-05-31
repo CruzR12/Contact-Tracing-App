@@ -1,1 +1,9 @@
 c:\users\cruzr\documents\visual studio 2015\Projects\Contact Tracing App\Contact Tracing App\bin\Debug\Contact Tracing App.exe.config
+C:\Users\cruzr\Documents\Visual Studio 2015\Projects\Contact Tracing App\Contact Tracing App\bin\Debug\Contact Tracing App.exe
+C:\Users\cruzr\Documents\Visual Studio 2015\Projects\Contact Tracing App\Contact Tracing App\bin\Debug\Contact Tracing App.pdb
+C:\Users\cruzr\Documents\Visual Studio 2015\Projects\Contact Tracing App\Contact Tracing App\obj\Debug\Contact Tracing App.csprojResolveAssemblyReference.cache
+C:\Users\cruzr\Documents\Visual Studio 2015\Projects\Contact Tracing App\Contact Tracing App\obj\Debug\Contact_Tracing_App.Form1.resources
+C:\Users\cruzr\Documents\Visual Studio 2015\Projects\Contact Tracing App\Contact Tracing App\obj\Debug\Contact_Tracing_App.Properties.Resources.resources
+C:\Users\cruzr\Documents\Visual Studio 2015\Projects\Contact Tracing App\Contact Tracing App\obj\Debug\Contact Tracing App.csproj.GenerateResource.Cache
+C:\Users\cruzr\Documents\Visual Studio 2015\Projects\Contact Tracing App\Contact Tracing App\obj\Debug\Contact Tracing App.exe
+C:\Users\cruzr\Documents\Visual Studio 2015\Projects\Contact Tracing App\Contact Tracing App\obj\Debug\Contact Tracing App.pdb
