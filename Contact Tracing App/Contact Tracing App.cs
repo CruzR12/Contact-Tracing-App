@@ -26,6 +26,15 @@ namespace Contact_Tracing_App
             }
         }
 
+        private void female_chckbox_CheckedChanged(object sender, EventArgs e)
+        {
+            male_chckbx.Enabled = false;
+            if (female_chckbx.Checked == false)
+            {
+                male_chckbx.Enabled = true;
+            }
+        }
+
         private void add_btn_Click(object sender, EventArgs e)
         {
             string name = name_txtbox.Text;
