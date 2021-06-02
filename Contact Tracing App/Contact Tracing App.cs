@@ -17,6 +17,15 @@ namespace Contact_Tracing_App
             InitializeComponent();
         }
 
+        private void male_chckbx_CheckedChanged(object sender, EventArgs e)
+        {
+            female_chckbx.Enabled = false;
+            if (male_chckbx.Checked == false)
+            {
+                female_chckbx.Enabled = true;
+            }
+        }
+
         private void add_btn_Click(object sender, EventArgs e)
         {
             string name = name_txtbox.Text;
@@ -24,7 +33,7 @@ namespace Contact_Tracing_App
             {
                 string gender = "Male";
             }
-            else if (female_chckbox.Checked)
+            else if (female_chckbx.Checked)
             {
                 string gender = "Female";
             }
@@ -33,7 +42,7 @@ namespace Contact_Tracing_App
             string cpnumber = cpnumber_txtbox.Text;
             name_txtbox.Text = "";
             male_chckbx.Checked = false;
-            female_chckbox.Checked = false;
+            female_chckbx.Checked = false;
             age_txtbox.Text = "";
             address_txtbox.Text = "";
             cpnumber_txtbox.Text = "";

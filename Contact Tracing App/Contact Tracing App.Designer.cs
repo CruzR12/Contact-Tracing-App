@@ -40,7 +40,7 @@
             this.date_and_time = new System.Windows.Forms.DateTimePicker();
             this.gender_label = new System.Windows.Forms.Label();
             this.male_chckbx = new System.Windows.Forms.CheckBox();
-            this.female_chckbox = new System.Windows.Forms.CheckBox();
+            this.female_chckbx = new System.Windows.Forms.CheckBox();
             this.add_btn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -142,16 +142,18 @@
             this.male_chckbx.TabIndex = 12;
             this.male_chckbx.Text = "Male";
             this.male_chckbx.UseVisualStyleBackColor = true;
+            this.male_chckbx.CheckedChanged += new System.EventHandler(this.male_chckbx_CheckedChanged);
             // 
-            // female_chckbox
+            // female_chckbx
             // 
-            this.female_chckbox.AutoSize = true;
-            this.female_chckbox.Location = new System.Drawing.Point(128, 167);
-            this.female_chckbox.Name = "female_chckbox";
-            this.female_chckbox.Size = new System.Drawing.Size(60, 17);
-            this.female_chckbox.TabIndex = 13;
-            this.female_chckbox.Text = "Female";
-            this.female_chckbox.UseVisualStyleBackColor = true;
+            this.female_chckbx.AutoSize = true;
+            this.female_chckbx.Location = new System.Drawing.Point(128, 167);
+            this.female_chckbx.Name = "female_chckbx";
+            this.female_chckbx.Size = new System.Drawing.Size(60, 17);
+            this.female_chckbx.TabIndex = 13;
+            this.female_chckbx.Text = "Female";
+            this.female_chckbx.UseVisualStyleBackColor = true;
+            this.female_chckbx.CheckedChanged += new System.EventHandler(this.female_chckbox_CheckedChanged);
             // 
             // add_btn
             // 
@@ -169,7 +171,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(457, 392);
             this.Controls.Add(this.add_btn);
-            this.Controls.Add(this.female_chckbox);
+            this.Controls.Add(this.female_chckbx);
             this.Controls.Add(this.male_chckbx);
             this.Controls.Add(this.gender_label);
             this.Controls.Add(this.date_and_time);
@@ -203,7 +205,7 @@
         private System.Windows.Forms.DateTimePicker date_and_time;
         private System.Windows.Forms.Label gender_label;
         private System.Windows.Forms.CheckBox male_chckbx;
-        private System.Windows.Forms.CheckBox female_chckbox;
+        private System.Windows.Forms.CheckBox female_chckbx;
         private System.Windows.Forms.Button add_btn;
     }
 }
