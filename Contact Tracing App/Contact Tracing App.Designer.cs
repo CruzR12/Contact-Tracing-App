@@ -30,7 +30,7 @@
         {
             this.name_txtbox = new System.Windows.Forms.TextBox();
             this.age_txtbox = new System.Windows.Forms.TextBox();
-            this.address_txtboc = new System.Windows.Forms.TextBox();
+            this.address_txtbox = new System.Windows.Forms.TextBox();
             this.cpnumber_txtbox = new System.Windows.Forms.TextBox();
             this.name_label = new System.Windows.Forms.Label();
             this.age_label = new System.Windows.Forms.Label();
@@ -41,6 +41,7 @@
             this.gender_label = new System.Windows.Forms.Label();
             this.male_chckbx = new System.Windows.Forms.CheckBox();
             this.female_chckbox = new System.Windows.Forms.CheckBox();
+            this.add_btn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // name_txtbox
@@ -57,12 +58,12 @@
             this.age_txtbox.Size = new System.Drawing.Size(373, 20);
             this.age_txtbox.TabIndex = 1;
             // 
-            // address_txtboc
+            // address_txtbox
             // 
-            this.address_txtboc.Location = new System.Drawing.Point(43, 247);
-            this.address_txtboc.Name = "address_txtboc";
-            this.address_txtboc.Size = new System.Drawing.Size(373, 20);
-            this.address_txtboc.TabIndex = 2;
+            this.address_txtbox.Location = new System.Drawing.Point(43, 247);
+            this.address_txtbox.Name = "address_txtbox";
+            this.address_txtbox.Size = new System.Drawing.Size(373, 20);
+            this.address_txtbox.TabIndex = 2;
             // 
             // cpnumber_txtbox
             // 
@@ -152,11 +153,22 @@
             this.female_chckbox.Text = "Female";
             this.female_chckbox.UseVisualStyleBackColor = true;
             // 
+            // add_btn
+            // 
+            this.add_btn.Location = new System.Drawing.Point(243, 330);
+            this.add_btn.Name = "add_btn";
+            this.add_btn.Size = new System.Drawing.Size(75, 31);
+            this.add_btn.TabIndex = 14;
+            this.add_btn.Text = "Add";
+            this.add_btn.UseVisualStyleBackColor = true;
+            this.add_btn.Click += new System.EventHandler(this.add_btn_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(457, 392);
+            this.Controls.Add(this.add_btn);
             this.Controls.Add(this.female_chckbox);
             this.Controls.Add(this.male_chckbx);
             this.Controls.Add(this.gender_label);
@@ -167,7 +179,7 @@
             this.Controls.Add(this.age_label);
             this.Controls.Add(this.name_label);
             this.Controls.Add(this.cpnumber_txtbox);
-            this.Controls.Add(this.address_txtboc);
+            this.Controls.Add(this.address_txtbox);
             this.Controls.Add(this.age_txtbox);
             this.Controls.Add(this.name_txtbox);
             this.Name = "Form1";
@@ -181,7 +193,7 @@
 
         private System.Windows.Forms.TextBox name_txtbox;
         private System.Windows.Forms.TextBox age_txtbox;
-        private System.Windows.Forms.TextBox address_txtboc;
+        private System.Windows.Forms.TextBox address_txtbox;
         private System.Windows.Forms.TextBox cpnumber_txtbox;
         private System.Windows.Forms.Label name_label;
         private System.Windows.Forms.Label age_label;
@@ -192,6 +204,7 @@
         private System.Windows.Forms.Label gender_label;
         private System.Windows.Forms.CheckBox male_chckbx;
         private System.Windows.Forms.CheckBox female_chckbox;
+        private System.Windows.Forms.Button add_btn;
     }
 }
 
