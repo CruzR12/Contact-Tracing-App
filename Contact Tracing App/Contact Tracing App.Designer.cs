@@ -116,6 +116,7 @@
             this.enter_btn.TabIndex = 8;
             this.enter_btn.Text = "Enter";
             this.enter_btn.UseVisualStyleBackColor = true;
+            this.enter_btn.Click += new System.EventHandler(this.enter_btn_Click);
             // 
             // date_and_time
             // 
