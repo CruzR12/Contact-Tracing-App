@@ -92,11 +92,11 @@ namespace Contact_Tracing_App
                     string address = address_txtbox.Text;
                     string cpnumber = cpnumber_txtbox.Text;
 
-                    outputFile.WriteLine("- " + name);
-                    outputFile.WriteLine("- " + gender);
-                    outputFile.WriteLine("- " + age);
-                    outputFile.WriteLine("- " + address);
-                    outputFile.WriteLine("- " + cpnumber);
+                    outputFile.WriteLine("Name:    " + name);
+                    outputFile.WriteLine("Gender:  " + gender);
+                    outputFile.WriteLine("Age:      " + age);
+                    outputFile.WriteLine("Address: " + address);
+                    outputFile.WriteLine("Number:  " + cpnumber);
                     outputFile.WriteLine("");
                 }
                 else if (female_chckbx.Checked)
