@@ -56,49 +56,72 @@ namespace Contact_Tracing_App
 
         private void add_btn_Click(object sender, EventArgs e)
         {
-            StreamWriter outputFile;
-            outputFile = File.AppendText("Contacts.txt");
-            outputFile.WriteLine("Contact");
-            outputFile.WriteLine(DateTime.Now.ToLongDateString());
-            outputFile.WriteLine(DateTime.Now.ToLongTimeString());
-
-            string name = name_txtbox.Text;
-            if (male_chckbx.Checked)
+            if (name_txtbox.Text == "")
             {
-                string gender = "Male";
-                string age = age_txtbox.Text;
-                string address = address_txtbox.Text;
-                string cpnumber = cpnumber_txtbox.Text;
-
-                outputFile.WriteLine("-" + name);
-                outputFile.WriteLine("-" + gender);
-                outputFile.WriteLine("-" + age);
-                outputFile.WriteLine("-" + address);
-                outputFile.WriteLine("-" + cpnumber);
-                outputFile.WriteLine("");
+                MessageBox.Show("Please enter your name");
             }
-            else if (female_chckbx.Checked)
+            else if (male_chckbx.Checked == false && female_chckbx.Checked == false)
             {
-                string gender = "Female";
-                string age = age_txtbox.Text;
-                string address = address_txtbox.Text;
-                string cpnumber = cpnumber_txtbox.Text;
-
-                outputFile.WriteLine("-" + name);
-                outputFile.WriteLine("-" + gender);
-                outputFile.WriteLine("-" + age);
-                outputFile.WriteLine("-" + address);
-                outputFile.WriteLine("-" + cpnumber);
-                outputFile.WriteLine("");
+                MessageBox.Show("Please enter your gender");
             }
+            else if (age_txtbox.Text == "")
+            {
+                MessageBox.Show("Please enter your age");
+            }
+            else if (address_txtbox.Text == "")
+            {
+                MessageBox.Show("Please enter your address");
+            }
+            else if (cpnumber_txtbox.Text == "")
+            {
+                MessageBox.Show("Please enter your phone number");
+            }
+            else
+            {
+                StreamWriter outputFile;
+                outputFile = File.AppendText("Contacts.txt");
+                outputFile.WriteLine("Contact");
+                outputFile.WriteLine(DateTime.Now.ToLongDateString());
+                outputFile.WriteLine(DateTime.Now.ToLongTimeString());
 
-            outputFile.Close();
-            name_txtbox.Text = "";
-            male_chckbx.Checked = false;
-            female_chckbx.Checked = false;
-            age_txtbox.Text = "";
-            address_txtbox.Text = "";
-            cpnumber_txtbox.Text = "";
+                string name = name_txtbox.Text;
+                if (male_chckbx.Checked)
+                {
+                    string gender = "Male";
+                    string age = age_txtbox.Text;
+                    string address = address_txtbox.Text;
+                    string cpnumber = cpnumber_txtbox.Text;
+
+                    outputFile.WriteLine("-" + name);
+                    outputFile.WriteLine("-" + gender);
+                    outputFile.WriteLine("-" + age);
+                    outputFile.WriteLine("-" + address);
+                    outputFile.WriteLine("-" + cpnumber);
+                    outputFile.WriteLine("");
+                }
+                else if (female_chckbx.Checked)
+                {
+                    string gender = "Female";
+                    string age = age_txtbox.Text;
+                    string address = address_txtbox.Text;
+                    string cpnumber = cpnumber_txtbox.Text;
+
+                    outputFile.WriteLine("-" + name);
+                    outputFile.WriteLine("-" + gender);
+                    outputFile.WriteLine("-" + age);
+                    outputFile.WriteLine("-" + address);
+                    outputFile.WriteLine("-" + cpnumber);
+                    outputFile.WriteLine("");
+                }
+
+                outputFile.Close();
+                name_txtbox.Text = "";
+                male_chckbx.Checked = false;
+                female_chckbx.Checked = false;
+                age_txtbox.Text = "";
+                address_txtbox.Text = "";
+                cpnumber_txtbox.Text = "";
+            }
         }
 
         private void view_btn_Click(object sender, EventArgs e)
