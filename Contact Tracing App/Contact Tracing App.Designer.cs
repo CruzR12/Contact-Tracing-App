@@ -37,7 +37,7 @@
             this.age_label = new System.Windows.Forms.Label();
             this.Address_Label = new System.Windows.Forms.Label();
             this.cpnumber_label = new System.Windows.Forms.Label();
-            this.enter_btn = new System.Windows.Forms.Button();
+            this.view_btn = new System.Windows.Forms.Button();
             this.gender_label = new System.Windows.Forms.Label();
             this.male_chckbx = new System.Windows.Forms.CheckBox();
             this.female_chckbx = new System.Windows.Forms.CheckBox();
@@ -45,108 +45,109 @@
             this.time_label = new System.Windows.Forms.Label();
             this.date_label = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.cntct_trcng_txt = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // name_txtbox
             // 
-            this.name_txtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name_txtbox.Location = new System.Drawing.Point(43, 126);
+            this.name_txtbox.Font = new System.Drawing.Font("Tahoma", 11.25F);
+            this.name_txtbox.Location = new System.Drawing.Point(43, 132);
             this.name_txtbox.Name = "name_txtbox";
-            this.name_txtbox.Size = new System.Drawing.Size(373, 24);
+            this.name_txtbox.Size = new System.Drawing.Size(373, 26);
             this.name_txtbox.TabIndex = 0;
             // 
             // age_txtbox
             // 
-            this.age_txtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.age_txtbox.Location = new System.Drawing.Point(44, 213);
+            this.age_txtbox.Font = new System.Drawing.Font("Tahoma", 11.25F);
+            this.age_txtbox.Location = new System.Drawing.Point(44, 230);
             this.age_txtbox.Name = "age_txtbox";
-            this.age_txtbox.Size = new System.Drawing.Size(373, 24);
+            this.age_txtbox.Size = new System.Drawing.Size(373, 26);
             this.age_txtbox.TabIndex = 1;
             // 
             // address_txtbox
             // 
-            this.address_txtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.address_txtbox.Location = new System.Drawing.Point(43, 262);
+            this.address_txtbox.Font = new System.Drawing.Font("Tahoma", 11.25F);
+            this.address_txtbox.Location = new System.Drawing.Point(43, 281);
             this.address_txtbox.Name = "address_txtbox";
-            this.address_txtbox.Size = new System.Drawing.Size(373, 24);
+            this.address_txtbox.Size = new System.Drawing.Size(373, 26);
             this.address_txtbox.TabIndex = 2;
             // 
             // cpnumber_txtbox
             // 
-            this.cpnumber_txtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cpnumber_txtbox.Location = new System.Drawing.Point(43, 311);
+            this.cpnumber_txtbox.Font = new System.Drawing.Font("Tahoma", 11.25F);
+            this.cpnumber_txtbox.Location = new System.Drawing.Point(44, 332);
             this.cpnumber_txtbox.Name = "cpnumber_txtbox";
-            this.cpnumber_txtbox.Size = new System.Drawing.Size(373, 24);
+            this.cpnumber_txtbox.Size = new System.Drawing.Size(373, 26);
             this.cpnumber_txtbox.TabIndex = 3;
             // 
             // name_label
             // 
             this.name_label.AutoSize = true;
-            this.name_label.Font = new System.Drawing.Font("Times New Roman", 12F);
-            this.name_label.Location = new System.Drawing.Point(40, 104);
+            this.name_label.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.name_label.Location = new System.Drawing.Point(40, 110);
             this.name_label.Name = "name_label";
-            this.name_label.Size = new System.Drawing.Size(46, 19);
+            this.name_label.Size = new System.Drawing.Size(43, 17);
             this.name_label.TabIndex = 4;
             this.name_label.Text = "Name";
             // 
             // age_label
             // 
             this.age_label.AutoSize = true;
-            this.age_label.Font = new System.Drawing.Font("Times New Roman", 12F);
-            this.age_label.Location = new System.Drawing.Point(40, 191);
+            this.age_label.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.age_label.Location = new System.Drawing.Point(40, 208);
             this.age_label.Name = "age_label";
-            this.age_label.Size = new System.Drawing.Size(34, 19);
+            this.age_label.Size = new System.Drawing.Size(31, 17);
             this.age_label.TabIndex = 5;
             this.age_label.Text = "Age";
             // 
             // Address_Label
             // 
             this.Address_Label.AutoSize = true;
-            this.Address_Label.Font = new System.Drawing.Font("Times New Roman", 12F);
-            this.Address_Label.Location = new System.Drawing.Point(40, 240);
+            this.Address_Label.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.Address_Label.Location = new System.Drawing.Point(40, 259);
             this.Address_Label.Name = "Address_Label";
-            this.Address_Label.Size = new System.Drawing.Size(60, 19);
+            this.Address_Label.Size = new System.Drawing.Size(56, 17);
             this.Address_Label.TabIndex = 6;
             this.Address_Label.Text = "Address";
             // 
             // cpnumber_label
             // 
             this.cpnumber_label.AutoSize = true;
-            this.cpnumber_label.Font = new System.Drawing.Font("Times New Roman", 12F);
-            this.cpnumber_label.Location = new System.Drawing.Point(40, 289);
+            this.cpnumber_label.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.cpnumber_label.Location = new System.Drawing.Point(40, 310);
             this.cpnumber_label.Name = "cpnumber_label";
-            this.cpnumber_label.Size = new System.Drawing.Size(101, 19);
+            this.cpnumber_label.Size = new System.Drawing.Size(100, 17);
             this.cpnumber_label.TabIndex = 7;
             this.cpnumber_label.Text = "Phone Number";
             // 
-            // enter_btn
+            // view_btn
             // 
-            this.enter_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.enter_btn.Location = new System.Drawing.Point(341, 358);
-            this.enter_btn.Name = "enter_btn";
-            this.enter_btn.Size = new System.Drawing.Size(75, 31);
-            this.enter_btn.TabIndex = 8;
-            this.enter_btn.Text = "Enter";
-            this.enter_btn.UseVisualStyleBackColor = true;
-            this.enter_btn.Click += new System.EventHandler(this.enter_btn_Click);
+            this.view_btn.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.view_btn.Location = new System.Drawing.Point(341, 381);
+            this.view_btn.Name = "view_btn";
+            this.view_btn.Size = new System.Drawing.Size(75, 31);
+            this.view_btn.TabIndex = 8;
+            this.view_btn.Text = "View File";
+            this.view_btn.UseVisualStyleBackColor = true;
+            this.view_btn.Click += new System.EventHandler(this.enter_btn_Click);
             // 
             // gender_label
             // 
             this.gender_label.AutoSize = true;
-            this.gender_label.Font = new System.Drawing.Font("Times New Roman", 12F);
-            this.gender_label.Location = new System.Drawing.Point(40, 153);
+            this.gender_label.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.gender_label.Location = new System.Drawing.Point(40, 161);
             this.gender_label.Name = "gender_label";
-            this.gender_label.Size = new System.Drawing.Size(54, 19);
+            this.gender_label.Size = new System.Drawing.Size(52, 17);
             this.gender_label.TabIndex = 11;
             this.gender_label.Text = "Gender";
             // 
             // male_chckbx
             // 
             this.male_chckbx.AutoSize = true;
-            this.male_chckbx.Font = new System.Drawing.Font("Times New Roman", 12F);
-            this.male_chckbx.Location = new System.Drawing.Point(73, 172);
+            this.male_chckbx.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.male_chckbx.Location = new System.Drawing.Point(74, 183);
             this.male_chckbx.Name = "male_chckbx";
-            this.male_chckbx.Size = new System.Drawing.Size(59, 23);
+            this.male_chckbx.Size = new System.Drawing.Size(53, 21);
             this.male_chckbx.TabIndex = 12;
             this.male_chckbx.Text = "Male";
             this.male_chckbx.UseVisualStyleBackColor = true;
@@ -155,10 +156,10 @@
             // female_chckbx
             // 
             this.female_chckbx.AutoSize = true;
-            this.female_chckbx.Font = new System.Drawing.Font("Times New Roman", 12F);
-            this.female_chckbx.Location = new System.Drawing.Point(138, 172);
+            this.female_chckbx.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.female_chckbx.Location = new System.Drawing.Point(139, 183);
             this.female_chckbx.Name = "female_chckbx";
-            this.female_chckbx.Size = new System.Drawing.Size(72, 23);
+            this.female_chckbx.Size = new System.Drawing.Size(69, 21);
             this.female_chckbx.TabIndex = 13;
             this.female_chckbx.Text = "Female";
             this.female_chckbx.UseVisualStyleBackColor = true;
@@ -166,8 +167,8 @@
             // 
             // add_btn
             // 
-            this.add_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.add_btn.Location = new System.Drawing.Point(243, 358);
+            this.add_btn.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.add_btn.Location = new System.Drawing.Point(243, 381);
             this.add_btn.Name = "add_btn";
             this.add_btn.Size = new System.Drawing.Size(75, 31);
             this.add_btn.TabIndex = 14;
@@ -178,20 +179,20 @@
             // time_label
             // 
             this.time_label.AutoSize = true;
-            this.time_label.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.time_label.Font = new System.Drawing.Font("Tahoma", 10F);
             this.time_label.Location = new System.Drawing.Point(1, 18);
             this.time_label.Name = "time_label";
-            this.time_label.Size = new System.Drawing.Size(38, 19);
+            this.time_label.Size = new System.Drawing.Size(37, 17);
             this.time_label.TabIndex = 15;
             this.time_label.Text = "Time";
             // 
             // date_label
             // 
             this.date_label.AutoSize = true;
-            this.date_label.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.date_label.Font = new System.Drawing.Font("Tahoma", 10F);
             this.date_label.Location = new System.Drawing.Point(1, -1);
             this.date_label.Name = "date_label";
-            this.date_label.Size = new System.Drawing.Size(38, 19);
+            this.date_label.Size = new System.Drawing.Size(37, 17);
             this.date_label.TabIndex = 16;
             this.date_label.Text = "Date";
             // 
@@ -200,18 +201,29 @@
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // cntct_trcng_txt
+            // 
+            this.cntct_trcng_txt.AutoSize = true;
+            this.cntct_trcng_txt.Font = new System.Drawing.Font("Times New Roman", 25F, System.Drawing.FontStyle.Bold);
+            this.cntct_trcng_txt.Location = new System.Drawing.Point(101, 52);
+            this.cntct_trcng_txt.Name = "cntct_trcng_txt";
+            this.cntct_trcng_txt.Size = new System.Drawing.Size(252, 38);
+            this.cntct_trcng_txt.TabIndex = 17;
+            this.cntct_trcng_txt.Text = "Contact Tracing";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(457, 416);
+            this.ClientSize = new System.Drawing.Size(457, 436);
+            this.Controls.Add(this.cntct_trcng_txt);
             this.Controls.Add(this.date_label);
             this.Controls.Add(this.time_label);
             this.Controls.Add(this.add_btn);
             this.Controls.Add(this.female_chckbx);
             this.Controls.Add(this.male_chckbx);
             this.Controls.Add(this.gender_label);
-            this.Controls.Add(this.enter_btn);
+            this.Controls.Add(this.view_btn);
             this.Controls.Add(this.cpnumber_label);
             this.Controls.Add(this.Address_Label);
             this.Controls.Add(this.age_label);
@@ -220,6 +232,7 @@
             this.Controls.Add(this.address_txtbox);
             this.Controls.Add(this.age_txtbox);
             this.Controls.Add(this.name_txtbox);
+            this.Font = new System.Drawing.Font("Tahoma", 8.25F);
             this.Name = "Form1";
             this.Text = "Contact Tracing App";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -238,7 +251,7 @@
         private System.Windows.Forms.Label age_label;
         private System.Windows.Forms.Label Address_Label;
         private System.Windows.Forms.Label cpnumber_label;
-        private System.Windows.Forms.Button enter_btn;
+        private System.Windows.Forms.Button view_btn;
         private System.Windows.Forms.Label gender_label;
         private System.Windows.Forms.CheckBox male_chckbx;
         private System.Windows.Forms.CheckBox female_chckbx;
@@ -246,6 +259,7 @@
         private System.Windows.Forms.Label time_label;
         private System.Windows.Forms.Label date_label;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label cntct_trcng_txt;
     }
 }
 
