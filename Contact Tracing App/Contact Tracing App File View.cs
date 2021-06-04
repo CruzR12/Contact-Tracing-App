@@ -20,7 +20,11 @@ namespace Contact_Tracing_App
 
         private void view_btn_Click(object sender, EventArgs e)
         {
-           
+            string path = @"C:\Users\cruzr\Documents\Visual Studio 2015\Projects\Contact Tracing App\Contact Tracing App\bin\Debug\Contacts.txt";
+            StreamReader stream = new StreamReader(path);
+            string file = stream.ReadToEnd();
+            fileview_box.Text = file.ToString();
+            stream.Close();
         }
     }
 }
