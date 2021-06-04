@@ -30,6 +30,7 @@
         {
             this.fileview_box = new System.Windows.Forms.RichTextBox();
             this.back_btn = new System.Windows.Forms.Button();
+            this.view_btn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // fileview_box
@@ -43,18 +44,30 @@
             // back_btn
             // 
             this.back_btn.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.back_btn.Location = new System.Drawing.Point(192, 395);
+            this.back_btn.Location = new System.Drawing.Point(8, 393);
             this.back_btn.Name = "back_btn";
             this.back_btn.Size = new System.Drawing.Size(75, 31);
             this.back_btn.TabIndex = 16;
             this.back_btn.Text = "Back";
             this.back_btn.UseVisualStyleBackColor = true;
             // 
+            // view_btn
+            // 
+            this.view_btn.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.view_btn.Location = new System.Drawing.Point(373, 393);
+            this.view_btn.Name = "view_btn";
+            this.view_btn.Size = new System.Drawing.Size(75, 31);
+            this.view_btn.TabIndex = 17;
+            this.view_btn.Text = "View";
+            this.view_btn.UseVisualStyleBackColor = true;
+            this.view_btn.Click += new System.EventHandler(this.view_btn_Click);
+            // 
             // Contact_Tracing_App_File_View
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(459, 436);
+            this.Controls.Add(this.view_btn);
             this.Controls.Add(this.back_btn);
             this.Controls.Add(this.fileview_box);
             this.Name = "Contact_Tracing_App_File_View";
@@ -67,5 +80,6 @@
 
         private System.Windows.Forms.RichTextBox fileview_box;
         private System.Windows.Forms.Button back_btn;
+        private System.Windows.Forms.Button view_btn;
     }
 }
