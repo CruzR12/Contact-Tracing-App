@@ -101,7 +101,7 @@ namespace Contact_Tracing_App
             cpnumber_txtbox.Text = "";
         }
 
-        private void enter_btn_Click(object sender, EventArgs e)
+        private void view_btn_Click(object sender, EventArgs e)
         {
 
         }

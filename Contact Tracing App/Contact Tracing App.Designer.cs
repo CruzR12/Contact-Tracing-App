@@ -129,7 +129,7 @@
             this.view_btn.TabIndex = 8;
             this.view_btn.Text = "View File";
             this.view_btn.UseVisualStyleBackColor = true;
-            this.view_btn.Click += new System.EventHandler(this.enter_btn_Click);
+            this.view_btn.Click += new System.EventHandler(this.view_btn_Click);
             // 
             // gender_label
             // 
@@ -215,7 +215,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(457, 436);
+            this.ClientSize = new System.Drawing.Size(459, 436);
             this.Controls.Add(this.cntct_trcng_txt);
             this.Controls.Add(this.date_label);
             this.Controls.Add(this.time_label);

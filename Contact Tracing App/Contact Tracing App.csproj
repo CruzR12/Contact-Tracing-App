@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Contact Tracing App File View.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contact Tracing App File View.Designer.cs">
+      <DependentUpon>Contact Tracing App File View.cs</DependentUpon>
+    </Compile>
     <Compile Include="Contact Tracing App.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +60,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Contact Tracing App File View.resx">
+      <DependentUpon>Contact Tracing App File View.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Contact Tracing App.resx">
       <DependentUpon>Contact Tracing App.cs</DependentUpon>
     </EmbeddedResource>
