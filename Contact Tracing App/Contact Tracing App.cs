@@ -103,7 +103,10 @@ namespace Contact_Tracing_App
 
         private void view_btn_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            Contact_Tracing_App_File_View form2 = new Contact_Tracing_App_File_View();
+            form2.ShowDialog();
+            this.Close();
         }
     }
 }
