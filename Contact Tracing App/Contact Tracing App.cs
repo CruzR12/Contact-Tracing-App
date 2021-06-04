@@ -17,6 +17,20 @@ namespace Contact_Tracing_App
         {
             InitializeComponent();
         }
+    
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            timer1.Start();
+            time_label.Text = DateTime.Now.ToLongTimeString();
+            date_label.Text = DateTime.Now.ToLongDateString();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            time_label.Text = DateTime.Now.ToLongTimeString();
+            date_label.Text = DateTime.Now.ToLongDateString();
+            timer1.Start();
+        }
 
         private void male_chckbx_CheckedChanged(object sender, EventArgs e)
         {
@@ -45,6 +59,8 @@ namespace Contact_Tracing_App
             StreamWriter outputFile;
             outputFile = File.AppendText("Contacts.txt");
             outputFile.WriteLine("Contact");
+            outputFile.WriteLine(DateTime.Now.ToLongDateString());
+            outputFile.WriteLine(DateTime.Now.ToLongTimeString());
 
             string name = name_txtbox.Text;
             if (male_chckbx.Checked)
