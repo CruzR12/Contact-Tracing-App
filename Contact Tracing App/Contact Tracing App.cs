@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace Contact_Tracing_App
 {
-    public partial class Form1 : Form
+    public partial class Contact_Tracing_App : Form
     {
-        public Form1()
+        public Contact_Tracing_App()
         {
             InitializeComponent();
         }

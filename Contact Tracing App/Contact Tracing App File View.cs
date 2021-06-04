@@ -26,5 +26,13 @@ namespace Contact_Tracing_App
             fileview_box.Text = file.ToString();
             stream.Close();
         }
+
+        private void back_btn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Contact_Tracing_App form1 = new Contact_Tracing_App();
+            form1.ShowDialog();
+            this.Close();
+        }
     }
 }

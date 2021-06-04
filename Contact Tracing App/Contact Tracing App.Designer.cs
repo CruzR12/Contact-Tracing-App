@@ -1,6 +1,6 @@
 ﻿namespace Contact_Tracing_App
 {
-    partial class Form1
+    partial class Contact_Tracing_App
     {
         /// <summary>
         /// Required designer variable.
@@ -211,7 +211,7 @@
             this.cntct_trcng_txt.TabIndex = 17;
             this.cntct_trcng_txt.Text = "Contact Tracing";
             // 
-            // Form1
+            // Contact_Tracing_App
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -233,7 +233,7 @@
             this.Controls.Add(this.age_txtbox);
             this.Controls.Add(this.name_txtbox);
             this.Font = new System.Drawing.Font("Tahoma", 8.25F);
-            this.Name = "Form1";
+            this.Name = "Contact_Tracing_App";
             this.Text = "Contact Tracing App";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
