@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Contact_Tracing_App));
             this.name_txtbox = new System.Windows.Forms.TextBox();
             this.age_txtbox = new System.Windows.Forms.TextBox();
             this.address_txtbox = new System.Windows.Forms.TextBox();
@@ -38,7 +39,7 @@
             this.Address_Label = new System.Windows.Forms.Label();
             this.cpnumber_label = new System.Windows.Forms.Label();
             this.view_btn = new System.Windows.Forms.Button();
-            this.gender_label = new System.Windows.Forms.Label();
+            this.sex_label = new System.Windows.Forms.Label();
             this.male_chckbx = new System.Windows.Forms.CheckBox();
             this.female_chckbx = new System.Windows.Forms.CheckBox();
             this.add_btn = new System.Windows.Forms.Button();
@@ -63,6 +64,7 @@
             this.age_txtbox.Name = "age_txtbox";
             this.age_txtbox.Size = new System.Drawing.Size(373, 26);
             this.age_txtbox.TabIndex = 1;
+            this.age_txtbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.age_txtbox_KeyPress);
             // 
             // address_txtbox
             // 
@@ -79,6 +81,7 @@
             this.cpnumber_txtbox.Name = "cpnumber_txtbox";
             this.cpnumber_txtbox.Size = new System.Drawing.Size(373, 26);
             this.cpnumber_txtbox.TabIndex = 3;
+            this.cpnumber_txtbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cpnumber_txtbox_KeyPress);
             // 
             // name_label
             // 
@@ -131,15 +134,15 @@
             this.view_btn.UseVisualStyleBackColor = true;
             this.view_btn.Click += new System.EventHandler(this.view_btn_Click);
             // 
-            // gender_label
+            // sex_label
             // 
-            this.gender_label.AutoSize = true;
-            this.gender_label.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.gender_label.Location = new System.Drawing.Point(40, 161);
-            this.gender_label.Name = "gender_label";
-            this.gender_label.Size = new System.Drawing.Size(52, 17);
-            this.gender_label.TabIndex = 11;
-            this.gender_label.Text = "Gender";
+            this.sex_label.AutoSize = true;
+            this.sex_label.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.sex_label.Location = new System.Drawing.Point(41, 161);
+            this.sex_label.Name = "sex_label";
+            this.sex_label.Size = new System.Drawing.Size(31, 17);
+            this.sex_label.TabIndex = 11;
+            this.sex_label.Text = "Sex";
             // 
             // male_chckbx
             // 
@@ -222,7 +225,7 @@
             this.Controls.Add(this.add_btn);
             this.Controls.Add(this.female_chckbx);
             this.Controls.Add(this.male_chckbx);
-            this.Controls.Add(this.gender_label);
+            this.Controls.Add(this.sex_label);
             this.Controls.Add(this.view_btn);
             this.Controls.Add(this.cpnumber_label);
             this.Controls.Add(this.Address_Label);
@@ -233,6 +236,7 @@
             this.Controls.Add(this.age_txtbox);
             this.Controls.Add(this.name_txtbox);
             this.Font = new System.Drawing.Font("Tahoma", 8.25F);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Contact_Tracing_App";
             this.Text = "Contact Tracing App";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -252,7 +256,7 @@
         private System.Windows.Forms.Label Address_Label;
         private System.Windows.Forms.Label cpnumber_label;
         private System.Windows.Forms.Button view_btn;
-        private System.Windows.Forms.Label gender_label;
+        private System.Windows.Forms.Label sex_label;
         private System.Windows.Forms.CheckBox male_chckbx;
         private System.Windows.Forms.CheckBox female_chckbx;
         private System.Windows.Forms.Button add_btn;

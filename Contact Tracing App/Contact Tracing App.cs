@@ -17,7 +17,7 @@ namespace Contact_Tracing_App
         {
             InitializeComponent();
         }
-    
+
         private void Form1_Load(object sender, EventArgs e)
         {
             timer1.Start();
@@ -34,23 +34,19 @@ namespace Contact_Tracing_App
 
         private void male_chckbx_CheckedChanged(object sender, EventArgs e)
         {
-            string gender = "Male";
             female_chckbx.Enabled = false;
             if (male_chckbx.Checked == false)
             {
                 female_chckbx.Enabled = true;
-                gender = "";
             }
         }
 
         private void female_chckbox_CheckedChanged(object sender, EventArgs e)
         {
-            string gender = "Female";
             male_chckbx.Enabled = false;
             if (female_chckbx.Checked == false)
             {
                 male_chckbx.Enabled = true;
-                gender = "";
             }
         }
 
@@ -87,13 +83,13 @@ namespace Contact_Tracing_App
                 string name = name_txtbox.Text;
                 if (male_chckbx.Checked)
                 {
-                    string gender = "Male";
+                    string sex = "Male";
                     string age = age_txtbox.Text;
                     string address = address_txtbox.Text;
                     string cpnumber = cpnumber_txtbox.Text;
 
                     outputFile.WriteLine("Name:    " + name);
-                    outputFile.WriteLine("Gender:  " + gender);
+                    outputFile.WriteLine("Sex:  " + sex);
                     outputFile.WriteLine("Age:      " + age);
                     outputFile.WriteLine("Address: " + address);
                     outputFile.WriteLine("Number:  " + cpnumber);
@@ -101,13 +97,13 @@ namespace Contact_Tracing_App
                 }
                 else if (female_chckbx.Checked)
                 {
-                    string gender = "Female";
+                    string sex = "Female";
                     string age = age_txtbox.Text;
                     string address = address_txtbox.Text;
                     string cpnumber = cpnumber_txtbox.Text;
 
                     outputFile.WriteLine("- " + name);
-                    outputFile.WriteLine("- " + gender);
+                    outputFile.WriteLine("- " + sex);
                     outputFile.WriteLine("- " + age);
                     outputFile.WriteLine("- " + address);
                     outputFile.WriteLine("- " + cpnumber);
@@ -130,6 +126,24 @@ namespace Contact_Tracing_App
             Contact_Tracing_App_File_View form2 = new Contact_Tracing_App_File_View();
             form2.ShowDialog();
             this.Close();
+        }
+
+        private void age_txtbox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+            if (!Char.IsNumber(ch) && !Char.IsControl(ch))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void cpnumber_txtbox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+            if (!Char.IsNumber(ch) && !Char.IsControl(ch))
+            {
+                e.Handled = true;
+            }
         }
     }
 }

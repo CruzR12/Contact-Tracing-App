@@ -8,3 +8,13 @@ C:\Users\cruzr\Documents\Visual Studio 2015\Projects\Contact Tracing App\Contact
 C:\Users\cruzr\Documents\Visual Studio 2015\Projects\Contact Tracing App\Contact Tracing App\obj\Debug\Contact Tracing App.pdb
 C:\Users\cruzr\Documents\Visual Studio 2015\Projects\Contact Tracing App\Contact Tracing App\obj\Debug\Contact_Tracing_App.Contact_Tracing_App_File_View.resources
 C:\Users\cruzr\Documents\Visual Studio 2015\Projects\Contact Tracing App\Contact Tracing App\obj\Debug\Contact_Tracing_App.Contact_Tracing_App.resources
+C:\Users\cruzr\Source\Repos\Contact-Tracing-App\Contact Tracing App\bin\Debug\Contact Tracing App.exe.config
+C:\Users\cruzr\Source\Repos\Contact-Tracing-App\Contact Tracing App\obj\Debug\Contact Tracing App.exe
+C:\Users\cruzr\Source\Repos\Contact-Tracing-App\Contact Tracing App\obj\Debug\Contact Tracing App.pdb
+C:\Users\cruzr\Source\Repos\Contact-Tracing-App\Contact Tracing App\bin\Debug\Contact Tracing App.exe
+C:\Users\cruzr\Source\Repos\Contact-Tracing-App\Contact Tracing App\bin\Debug\Contact Tracing App.pdb
+C:\Users\cruzr\Source\Repos\Contact-Tracing-App\Contact Tracing App\obj\Debug\Contact Tracing App.csprojResolveAssemblyReference.cache
+C:\Users\cruzr\Source\Repos\Contact-Tracing-App\Contact Tracing App\obj\Debug\Contact_Tracing_App.Contact_Tracing_App_File_View.resources
+C:\Users\cruzr\Source\Repos\Contact-Tracing-App\Contact Tracing App\obj\Debug\Contact_Tracing_App.Contact_Tracing_App.resources
+C:\Users\cruzr\Source\Repos\Contact-Tracing-App\Contact Tracing App\obj\Debug\Contact_Tracing_App.Properties.Resources.resources
+C:\Users\cruzr\Source\Repos\Contact-Tracing-App\Contact Tracing App\obj\Debug\Contact Tracing App.csproj.GenerateResource.Cache
