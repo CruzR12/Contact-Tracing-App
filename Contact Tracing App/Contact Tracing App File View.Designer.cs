@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Contact_Tracing_App_File_View));
             this.fileview_box = new System.Windows.Forms.RichTextBox();
             this.back_btn = new System.Windows.Forms.Button();
             this.view_btn = new System.Windows.Forms.Button();
@@ -71,6 +72,8 @@
             this.Controls.Add(this.view_btn);
             this.Controls.Add(this.back_btn);
             this.Controls.Add(this.fileview_box);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Contact_Tracing_App_File_View";
             this.Text = "Contact Tracing App";
             this.ResumeLayout(false);

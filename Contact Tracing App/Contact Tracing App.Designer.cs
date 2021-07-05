@@ -237,6 +237,7 @@
             this.Controls.Add(this.name_txtbox);
             this.Font = new System.Drawing.Font("Tahoma", 8.25F);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Contact_Tracing_App";
             this.Text = "Contact Tracing App";
             this.Load += new System.EventHandler(this.Form1_Load);

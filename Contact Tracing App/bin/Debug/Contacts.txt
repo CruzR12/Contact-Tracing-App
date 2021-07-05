@@ -69,3 +69,48 @@ Age:      19
 Address: Angono, Rizal
 Number:  09303140821
 
+Contact
+Friday, 2 July 2021
+8:35:06 pm
+Name:    Rashid Cruz
+Sex:  Male
+Age:      19
+Address: Angono, Rizal
+Number:  0930314081
+
+Contact
+Saturday, 3 July 2021
+10:29:07 am
+Name:    Rashid Cruz
+Sex:  Male
+Age:      19
+Address: Angono, Rizal
+Number:  09303140821
+
+Contact
+Saturday, 3 July 2021
+1:28:18 pm
+Name:    Rashid Cruz
+Sex:  Male
+Age:      19
+Address: Angono, Rizal
+Number:  09303140821
+
+Contact
+Saturday, 3 July 2021
+1:53:15 pm
+Name:    Rashid Cruz
+Sex:  Male
+Age:      19
+Address: Angono, Rizal
+Number:  09303140821
+
+Contact
+Saturday, 3 July 2021
+3:05:34 pm
+Name:    Rashid Cruz
+Sex:  Male
+Age:      19
+Address: Angono, Rizal
+Number:  09303140821
+
